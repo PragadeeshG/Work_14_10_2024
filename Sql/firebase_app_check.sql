@@ -1,0 +1,15 @@
+create table if not exists firebase_app_check(
+firebase_id Integer not null,
+device_check varchar(255) null,
+app_attest varchar(255) null,
+play_integrity varchar(255) null,
+re_captcha_enterprise Integer null,
+default_providers Integer null,
+user_id Integer null,
+custom_providers varchar(255) null,
+platform_attest varchar(255) null,
+test_providers varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint firebase_app_check_pk primary key(firebase_id));

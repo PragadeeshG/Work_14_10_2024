@@ -1,0 +1,15 @@
+create table if not exists firebase_auth_user_account(
+firebase_id Integer not null,
+user_account_features varchar(255) null,
+function_trigger varchar(255) null,
+on_auth varchar(255) null,
+on_create varchar(255) null,
+locale Integer null,
+send_welcome_email varchar(255) null,
+is_privileged varchar(255) null,
+last_login varchar(255) null,
+contact_id Integer null,
+address_id varchar(255) null,
+unique_user_id varchar(255) null,
+request_type varchar(255) null,
+constraint firebase_auth_user_account_pk primary key(firebase_id));

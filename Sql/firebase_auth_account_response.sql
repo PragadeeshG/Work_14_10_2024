@@ -1,0 +1,15 @@
+create table if not exists firebase_auth_account_response(
+firebase_id Integer not null,
+app_hosting varchar(255) null,
+active_account char null,
+service_account_id varchar(255) null,
+active_account_id varchar(255) null,
+allowed_users_list varchar(255) null,
+sign_in_methods varchar(255) null,
+templates varchar(255) null,
+auth_country varchar(255) null,
+auth_region_code Integer null,
+exceptions varchar(255) null,
+status varchar(255) null,
+remarks varchar(255) null,
+constraint firebase_auth_account_response_pk primary key(firebase_id));
